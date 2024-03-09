@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java_Projects.iml" filepath="$PROJECT_DIR$/.idea/Java_Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Library_Management/Library_Management.iml" filepath="$PROJECT_DIR$/Library_Management/Library_Management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RayMarcher/RayMarcher.iml" filepath="$PROJECT_DIR$/RayMarcher/RayMarcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicTacToe/TicTacToe.iml" filepath="$PROJECT_DIR$/TicTacToe/TicTacToe.iml" />
+    </modules>
+  </component>
+</project>

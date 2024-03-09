@@ -91,17 +91,6 @@ public class Library implements LibraryManagementSystem{
                 }
             }
 
-
-            //some rows are not read
-//            int count = 0;
-//            for (String key : inventory.keySet()){
-//                System.out.print(key + " is ");
-//                System.out.print(inventory.get(key) + " count is ");
-//                System.out.print(count);
-//                System.out.println();
-//                count++;
-//            }
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
 
@@ -147,7 +136,6 @@ public class Library implements LibraryManagementSystem{
         }
         if (found){
             inventory.put(isbn, quantity+1);
-            // System.out.println("Successfully returned");
         }
         else{
             throw new IllegalArgumentException("Not found");
@@ -166,7 +154,6 @@ public class Library implements LibraryManagementSystem{
 
     @Override
     public Book search(String input) {
-        // first, check if the input (isbn) exists in keys of inventory
         if (inventory.containsKey(input)){
 
             int mid = inventory.size() / 2;
