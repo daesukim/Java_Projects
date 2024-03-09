@@ -22,7 +22,6 @@ public class March {
         double radius = start.distance(end);
 
         // Calculate the top-left point of the circle
-
         double x = start.getX() - radius;
         double y = start.getY() - radius;
 

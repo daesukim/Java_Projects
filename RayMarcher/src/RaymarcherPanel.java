@@ -9,15 +9,8 @@ import java.util.Random;
 
 import javax.swing.JPanel;
 
-/**
- * Displays and updates the logic for the top-down raymarcher.
- */
-public class RaymarcherPanel extends JPanel { 
-    
-    /**
-     * We need to keep a reference to the parent swing app for sizing and 
-     * other bookkeeping.
-     */
+public class RaymarcherPanel extends JPanel {
+
     private final RaymarcherRunner raymarcherRunner;
     private final ArrayList<CollisionObject> objects;
     private final Camera cam;
@@ -112,8 +105,6 @@ public class RaymarcherPanel extends JPanel {
         }
 
         cam.drawObject(g2d);
-        //Ellipse2D CameraBound = new Ellipse2D.Double(cam.getX() - distance_initiator, cam.getY() - distance_initiator, distance_initiator * 2, distance_initiator * 2);
-        //g2d.draw(CameraBound);
 
         ArrayList<March> marches = march();
         for (int i = 0; i < marches.size(); i++){
